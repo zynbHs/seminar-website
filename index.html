@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Darna Smart Community | UOB Senior Project Seminar</title>
+    <meta name="description" content="Darna Smart Community — a unified mobile system for safety, maintenance, and communication in gated communities." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+<!-- Top Bar -->
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="brand">
+            <img class="brand__uob" src="assets/img/uob-logo.png" alt="University of Bahrain Logo" />
+            <div class="brand__meta">
+                <div class="brand__uni">University of Bahrain</div>
+                <div class="brand__dept">College of Information Technology — Department of Computer Science</div>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#abstract">Abstract</a>
+            <a href="#objectives">Objectives</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#tech">Technologies</a>
+            <a href="#results">Results</a>
+            <a href="#demo">Demo</a>
+            <a href="pages/team.html" class="nav__cta">Team</a>
+        </nav>
+
+        <button class="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container hero__grid">
+        <div class="hero__text">
+            <div class="hero__badge">
+                <span class="dot"></span>
+                Senior Project — 2025/2026
+            </div>
+
+            <h1 class="hero__title">
+                Darna Smart Community
+            </h1>
+
+            <p class="hero__tagline">
+                A unified mobile platform for emergency reporting, maintenance requests, and community announcements in gated communities.
+            </p>
+
+
+
+            <div class="hero__cards">
+                <div class="miniCard">
+                    <div class="miniCard__kpi">SOS</div>
+                    <div class="miniCard__label">Auto location </div>
+                </div>
+                <div class="miniCard">
+                    <div class="miniCard__kpi">Tracking</div>
+                    <div class="miniCard__label">Transparent status</div>
+                </div>
+                <div class="miniCard">
+                    <div class="miniCard__kpi">Alerts</div>
+                    <div class="miniCard__label">Urgent announcements</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual">
+            <div class="logoCard">
+                <img src="assets/img/project-logo.png" alt="Project Logo" class="logoCard__logo" />
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="hero__wave"></div>
+</section>
+
+<!-- Abstract -->
+<section id="abstract" class="section">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Abstract</h2>
+        </div>
+
+        <div class="card">
+            <p>
+                Darna Community System is a harmonized mobile application implemented to strengthen safety,
+                communication and infrastructure management within gated communities in Bahrain. The project
+                tackles challenges encountered by community residents and staff where outdated methods of
+                reporting, receiving report updates and overseeing daily operations are often delayed, ambiguous
+                or inefficient. Darna optimizes these encounters by permitting residents to submit emergency and
+                maintenance requests with instantaneous tracking, obtain announcements instantly and secure
+                digital entry codes. Developed using React Native and Expo assisting cross-platform support, along
+                with Node.js and MySQL backend to assure reliability and scalability. Darna also integrates AWS
+                SES for protected OTP verification. Darna's overall aim is to enhance community living by
+                supplying a centralized, intuitive platform that solidifies safety, boosts communication and
+                supports effective management across communities and residential compounds.
+
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- Objectives -->
+<section id="objectives" class="section section--alt">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Objectives</h2>
+
+        </div>
+
+        <div class="grid grid--3">
+            <div class="feature">
+                <div class="feature__icon">📍</div>
+                <h3>Enable fast emergency reporting</h3>
+                <p>Provide SOS reporting with auto-location and optional image attachments.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__icon">🛠️</div>
+                <h3>Simplify maintenance requests</h3>
+                <p>Allow users to submit categorized requests with attachments and tracking.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__icon">📣</div>
+                <h3>Improve community communication</h3>
+                <p>Broadcast urgent/regular announcements via dashboard and notifications.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__icon">🔄</div>
+                <h3>Provide transparent tracking</h3>
+                <p>Show status progress and allow staff to update states in real-time.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__icon">🔐</div>
+                <h3>Secure authentication</h3>
+                <p>Support login for Resident, Staff and Admin roles.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__icon">📈</div>
+                <h3>Design for scalability</h3>
+                <p>Build an architecture that can extend beyond gated communities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Methodology -->
+<section id="methodology" class="section">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Methodology / Approach</h2>
+        </div>
+
+        <div class="grid grid--2">
+            <div class="card">
+                <h3>Conceptual Diagram</h3>
+
+                <div class="diagram-image">
+                    <img
+                            src="assets/img/conceptual-diagram.png"
+                            alt="Conceptual System Architecture Diagram"
+                    />
+                </div>
+
+
+
+            </div>
+
+            <div class="card">
+                <h3>Development Approach</h3>
+                <ul class="list">
+                    <li><b>Iterative development</b> with incremental feature delivery (SOS → Maintenance → Announcements → Tracking).</li>
+                    <li><b>Role-based access</b> for Resident / Security / Management / Admin.</li>
+                    <li><b>Testing</b> focused on usability and reliability (status updates, notifications, request flows).</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <h3>Requirements Focus</h3>
+                <div class="chips">
+                    <span class="chip">Reliability (real-time communication)</span>
+                    <span class="chip">Usability (easy + memorable)</span>
+                    <span class="chip">Security (protect data/logs)</span>
+                    <span class="chip">Transparency (clear tracking)</span>
+                    <span class="chip">Scalability (beyond gated communities)</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies -->
+<section id="tech" class="section section--alt">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Technologies Used</h2>
+
+        </div>
+
+        <div class="grid grid--3">
+            <div class="card">
+                <h3>Programming</h3>
+                <ul class="list">
+                    <li>TypeScript / JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Frameworks</h3>
+                <ul class="list">
+                    <li>React Native (Expo)</li>
+                    <li>Node.js + Express</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Database & Cloud</h3>
+                <ul class="list">
+                    <li>MySQL</li>
+                    <li>AWS services (email/OTP)</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Results -->
+<section id="results" class="section">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Results</h2>
+        </div>
+
+        <!-- ONE COLUMN LAYOUT -->
+        <div class="grid grid--1">
+
+            <!-- Key Functional Results -->
+            <div class="card">
+                <h3>Key Functional Results</h3>
+                <ul class="list">
+                    <li><b>Emergency reporting:</b> SOS button, auto-location, image attachments, notification to staff, report status.</li>
+                    <li><b>Maintenance requests:</b> category selection, attachments, submission, and tracking.</li>
+                    <li><b>Announcements:</b> admin broadcasts urgent/regular messages via dashboard + notifications.</li>
+                    <li><b>Report tracking:</b> staff updates status and residents see progress.</li>
+                    <li><b>Authentication:</b> role-based login for Resident / Staff / Admin.</li>
+                </ul>
+            </div>
+
+            <!-- Application Screenshots -->
+            <div class="card">
+                <h3>Application Screenshots</h3>
+
+                <div class="results-gallery">
+                    <figure>
+                        <img src="assets/img/request-details.jpeg" alt="Request details screen">
+                    </figure>
+
+                    <figure>
+                        <img src="assets/img/user-management.jpeg" alt="user management screen">
+                    </figure>
+
+                    <figure>
+                        <img src="assets/img/tracking.png" alt="Request tracking screen">
+                    </figure>
+
+                    <figure>
+                        <img src="assets/img/announcement.jpeg" alt="Announcements screen">
+
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Demo -->
+<section id="demo" class="section section--alt" aria-label="Demo section">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Demo</h2>
+        </div>
+
+        <div class="grid grid--1">
+            <div class="card">
+                <h3>Elevator Pitch Video</h3>
+
+                <p class="muted">
+                    A short video demonstrating the main features and workflow of the Darna Smart Community application.
+                </p>
+
+
+                <a
+                        class="btn btn--primary"
+                        href="https://www.dropbox.com/scl/fi/q7qnjwkb6bmjpzvec1v7o/6ad8d643-df45-4367-b391-78d9c602dc73.mov?rlkey=f7j7wfdl7siuufcsolslculvs&st=bdevy7kw&dl=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    Watch Elevator Pitch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Conclusion -->
+<section class="section">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>Conclusion & Future Work</h2>
+        </div>
+
+        <div class="card">
+            <p>
+                Darna provides a centralized and practical solution for handling common gated community needs:
+                emergency reporting, maintenance requests, and community-wide announcements with transparent tracking.
+                The platform emphasizes reliability, usability, and secure role-based access.
+            </p>
+
+            <h3>Future Work</h3>
+            <ul class="list">
+                <li>AR Navigation: Use augmented reality to guide visitors and residents within large communities to easily locate villas, facilities, and service areas.</li>
+                <li>Smart Home Integration: Connect smart home systems to allow residents to control lighting, security, and air conditioning directly from the app.</li>
+                <li>Enhanced AI Assistant (Dana): Improve the assistant with advanced natural language understanding and personalized, context-aware support.</li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<!-- About & Team -->
+<section class="section section--alt">
+    <div class="container">
+        <div class="sectionHead">
+            <h2>About the Project & Team</h2>
+        </div>
+
+        <div class="card">
+            <p>
+                This project is a Final Year Senior Project completed during Semester 1 of the Academic Year 2025/2026
+                at the College of Information Technology — University of Bahrain.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="teamCard">
+                <h3>Zainab Hussain Maki</h3>
+                <p><strong>Major:</strong> Computer Science</p>
+                <p><strong>Email:</strong> <a href="mailto:Zainab209@outlook.com">Zainab209@outlook.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/zainabnaser" target="_blank">http://www.linkedin.com/in/zainabnaser</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/zynbHs" target="_blank">https://github.com/zynbHs</a></p>
+            </div>
+
+            <div style="height: 20px;"></div>
+
+           <div class="teamCard">
+                <h3>Maryam Husain Mahdi</h3>
+                <p><strong>Major:</strong> Software Engineering</p>
+                <p><strong>Email:</strong> <a href="mailto:Mrymalqassab@gmail.com">Mrymalqassab@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maryam-alqassab-9497781b7/" target="_blank">https://www.linkedin.com/in/maryam-alqassab-9497781b7/</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Mrymhussain" target="_blank">https://github.com/Mrymhussain</a></p>
+            </div>
+
+            <div style="height: 20px;"></div>
+
+            <div class="teamCard">
+                <h3>Zain Hasan Ali</h3>
+                <p><strong>Major:</strong> Computer Science</p>
+                <p><strong>Email:</strong> <a href="mailto:zaynnhasan@hotmail.com">zaynnhasan@hotmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zain-ali-46165622b/" target="_blank">https://www.linkedin.com/in/zain-ali-46165622b/</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/zzaaiinnnn" target="_blank">https://github.com/zzaaiinnnn</a></p>
+            </div>
+
+
+            <div class="divider"></div>
+
+            <div class="supervisorCard">
+                <h3>Supervisor</h3>
+                <p><strong>Name:</strong> Dr. Hadeel Shawkat AlObaidy</p>
+                <p><strong>Rank:</strong> Assistant Professor</p>
+                <p><strong>Email:</strong> <a href="mailto:halobaidy@uob.edu.bh">halobaidy@uob.edu.bh</a></p>
+            </div>
+
+            <a class="btn btn--ghost" href="pages/team.html">Open Team Page</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__left">
+            <div class="footer__title">Darna Smart Community</div>
+            <div class="footer__muted">UOB — Senior Project Seminar Website</div>
+        </div>
+        <div class="footer__right">
+            <a href="#abstract">Back to top</a>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
